@@ -29,7 +29,7 @@ const ContentTwo = () => {
                   "!bg-sky-500": x === 1,
                 })}
               ></span>
-              {new Array(18).fill(0).map((index) => (
+              {new Array(18).fill(0).map((m, index) => (
                 <span
                   key={index}
                   className={clsx("bg-white w-full my-2 h-2", {
