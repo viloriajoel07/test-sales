@@ -8,15 +8,15 @@ export const useDetailProduct = (data: ProductItem) => {
   const [price, setPrice] = useState("");
   const [subtotal, setSubtotal] = useState("");
 
-  const getSubtotal = () => {
-    if (quantity === "" || price === "") return setSubtotal("");
-    const result = Number(quantity) * Number(price);
-    setSubtotal(String(result) ?? "");
-  };
-
   useEffect(() => {
+    const getSubtotal = () => {
+      if (quantity === "" || price === "") return setSubtotal("");
+      const result = Number(quantity) * Number(price);
+      setSubtotal(String(result) ?? "");
+    };
+
     getSubtotal();
-  }, [quantity, price, getSubtotal]);
+  }, [quantity, price]);
 
   useEffect(() => {
     // set initial values
