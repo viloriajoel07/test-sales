@@ -56,7 +56,7 @@ export const useNewSale = () => {
 
   useEffect(() => {
     addProduct();
-  }, [addProduct]);
+  }, []);
 
   useEffect(() => {
     const params = new URLSearchParams(searchParams);
@@ -68,7 +68,7 @@ export const useNewSale = () => {
     params.set("total", JSON.stringify(total));
     params.set("products", JSON.stringify(products));
     replace(`${pathname}?${params.toString()}`);
-  }, [products, pathname, replace, searchParams]);
+  }, []);
 
   return {
     products,
