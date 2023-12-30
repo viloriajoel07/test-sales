@@ -1,6 +1,6 @@
 import React from "react";
 import clsx from "clsx";
-
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18];
 const ContentTwo = () => {
   return (
     <div
@@ -29,9 +29,9 @@ const ContentTwo = () => {
                   "!bg-sky-500": x === 1,
                 })}
               ></span>
-              {new Array(18).fill(0).map((m, index) => (
+              {arr.map((m) => (
                 <span
-                  key={index}
+                  key={m}
                   className={clsx("bg-white w-full my-2 h-2", {
                     "!bg-sky-500": x === 1,
                   })}
