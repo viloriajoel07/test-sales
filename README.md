@@ -6,7 +6,7 @@ Proyecto para manejo de ventas
 
 ## Requisitos
 
-Antes de comenzar, asegúrate de tener instalado Node.js y npm (o yarn) en tu máquina.
+Antes de comenzar, asegúrate de tener instalado Node.js y npm (o yarn) en tu máquina y de tener las variables de entorno.
 
 ## Instalación
 
