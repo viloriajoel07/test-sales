@@ -12,9 +12,6 @@ Antes de comenzar, aseg√∫rate de tener instalado Node.js y npm (o yarn) en tu m√
 
 1. Clona este repositorio:
 
-   ```bash
-   git clone https://github.com/tu-usuario/tu-proyecto.git
-
 2. Entra a la carpeta
    
    ````bash
