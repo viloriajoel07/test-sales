@@ -16,6 +16,7 @@ const ContentTwo = () => {
         <section className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8  flex-grow place-items-center">
           {[0, 1, 2].map((x) => (
             <div
+              key={x}
               className={clsx(
                 "flex border-2 border-white flex-col w-full md:w-[16rem] h-[28rem] px-10 py-6",
                 {

@@ -16,7 +16,7 @@ export const useDetailProduct = (data: ProductItem) => {
 
   useEffect(() => {
     getSubtotal();
-  }, [quantity, price]);
+  }, [quantity, price, getSubtotal]);
 
   useEffect(() => {
     // set initial values
@@ -24,7 +24,7 @@ export const useDetailProduct = (data: ProductItem) => {
     setQuantity(String(data.quantity ?? ""));
     setPrice(String(data.price ?? ""));
     setSubtotal(String(data.subtotal ?? ""));
-  }, []);
+  }, [data.name, data.price, data.quantity, data.subtotal]);
 
   return {
     id,

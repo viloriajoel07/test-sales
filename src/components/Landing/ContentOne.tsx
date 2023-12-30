@@ -13,8 +13,8 @@ const ContentOne = () => {
         ex obcaecati, eum tempore necessitatibus
       </p>
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-4  flex-grow items-center justify-center">
-        {[1, 2, 3, 4].map(() => (
-          <Card />
+        {[1, 2, 3, 4].map((n) => (
+          <Card key={n} />
         ))}
       </section>
     </div>
