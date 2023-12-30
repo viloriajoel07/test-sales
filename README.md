@@ -10,12 +10,9 @@ Antes de comenzar, asegúrate de tener instalado Node.js y npm (o yarn) en tu m�
 
 ## Instalación
 
-1. Clona este repositorio:
+1. Clona este repositorio
 
 2. Entra a la carpeta
-   
-   ````bash
-   cd tu-proyecto
 
 3. Instala las dependencias
    
