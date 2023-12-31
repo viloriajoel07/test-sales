@@ -87,7 +87,7 @@ const InputSelect: FC<IInputSelectProps> = ({
       return;
     }
     setListFiltered(listOptions ?? []);
-  }, [currentValue, listOptions]);
+  }, [currentValue]);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { value } = e.target;

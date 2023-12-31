@@ -66,7 +66,7 @@ export const useNewSale = () => {
     params.set("total", JSON.stringify(total));
     params.set("products", JSON.stringify(products));
     replace(`${pathname}?${params.toString()}`);
-  }, []);
+  }, [products]);
 
   return {
     products,
