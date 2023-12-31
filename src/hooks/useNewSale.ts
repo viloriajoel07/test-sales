@@ -32,8 +32,6 @@ export const useNewSale = () => {
   };
 
   const handleProducts = (values: ProductItem) => {
-    console.log(values);
-
     // update product
     setProducts((prev) => {
       const updatedProducts = prev.map((product) => {

@@ -8,13 +8,13 @@ export const useDetailProduct = (data: ProductItem) => {
   const [price, setPrice] = useState("");
   const [subtotal, setSubtotal] = useState("");
 
-  useEffect(() => {
-    const getSubtotal = () => {
-      if (quantity === "" || price === "") return setSubtotal("");
-      const result = Number(quantity) * Number(price);
-      setSubtotal(String(result) ?? "");
-    };
+  const getSubtotal = () => {
+    if (quantity === "" || price === "") return setSubtotal("");
+    const result = Number(quantity) * Number(price);
+    setSubtotal(String(result) ?? "");
+  };
 
+  useEffect(() => {
     getSubtotal();
   }, [quantity, price]);
 
@@ -24,7 +24,7 @@ export const useDetailProduct = (data: ProductItem) => {
     setQuantity(String(data.quantity ?? ""));
     setPrice(String(data.price ?? ""));
     setSubtotal(String(data.subtotal ?? ""));
-  }, [data.name, data.price, data.quantity, data.subtotal]);
+  }, []);
 
   return {
     id,
