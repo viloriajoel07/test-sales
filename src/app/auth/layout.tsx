@@ -19,7 +19,7 @@ export default function DashboarLayout({
         className={clsx(
           "flex md:ml-20 py-8 px-4 md:px-16 transition-all bg-gray-100 w-full min-h-screen pb-24 lg:mb-0",
           {
-            "md:!ml-56": active,
+            "lg:!ml-56": active,
           }
         )}
       >
