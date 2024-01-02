@@ -18,7 +18,7 @@ const SideBar = ({ setActive, active }: SideBarProps) => {
   return (
     <div
       className={clsx(
-        "w-20 h-screen fixed bg-sky-500 hidden md:flex justify-center flex-col transition-all items-center",
+        "w-20 h-screen fixed bg-sky-500 hidden lg:flex justify-center flex-col transition-all items-center",
         {
           "w-56": active,
         }

@@ -6,6 +6,8 @@ import {
 } from "@tabler/icons-react";
 import { Icon } from "next/dist/lib/metadata/types/metadata-types";
 
+export const PORT = process.env.PORT || 3000;
+
 export const headerLinks = [
   {
     label: "Content 1",
