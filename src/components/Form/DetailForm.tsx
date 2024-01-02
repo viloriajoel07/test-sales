@@ -43,7 +43,7 @@ const DetailForm = ({
       price: Number(price ?? undefined),
       subtotal: Number(subtotal ?? undefined),
     });
-  }, [data.id, name, quantity, price, subtotal, idProduct, setProducts]);
+  }, [name, quantity, price, subtotal, idProduct]);
 
   const handleValues = (response: any) => {
     setPrice(response.price);
